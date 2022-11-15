@@ -1,12 +1,12 @@
 from flask import Flask
 
+from .routes import view
 
 def create_app():
     app = Flask(__name__)
     
     # Registro de los Blueprints
-    from .views import views
-    app.register_blueprint(views)
+    app.register_blueprint(view)
 
 
     return app
