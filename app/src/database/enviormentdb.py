@@ -1,4 +1,4 @@
-DB_ENDPOINT = 'localhost:3306'
-DB_NAME = 'songsDB'
-DB_PASSWORD = '20023006'
-DB_USER = 'root'
+DB_ENDPOINT = 'cluster0.xueqapl.mongodb.net/'
+DB_NAME = 'songsApp'
+DB_PASSWORD = 'xr405mTJBGsj7322'
+DB_USER = 'develop'
