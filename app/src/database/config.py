@@ -39,3 +39,14 @@ class JSONEncoder(json.JSONEncoder):
 
 def encode(data):
     return json.loads(JSONEncoder().encode(data))
+
+fields = {
+    'songs': [
+        "name",
+        "author",
+        "image",
+        "date",
+        "lyric",
+        "lyric_with_chor"
+    ]
+}

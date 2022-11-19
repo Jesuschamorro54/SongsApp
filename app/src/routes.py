@@ -10,18 +10,19 @@ root_path = "/api"
 
 
 
-@api.route(f"{root_path}/songs")
+@api.route(f"{root_path}/songs", methods=['GET'])
 def all_songs():
 
     songs = []
     result = {'data': [], 'status': False}
 
-    # songs = search('songs')
+    songs = search('songs')
 
     if songs:
         result.update({
             'data': songs,
-            'status': True
+            'status': True,
+            'count': len(songs)
         })
 
     else:

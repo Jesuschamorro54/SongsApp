@@ -58,3 +58,23 @@ def search(table, params=None):
 
 ## Database connection instance
 connection = Database().connect_db()
+
+
+"""
+Dame de tu vida y de tu {REm}tiempo, {LAm}Suficientes {LA}para ver |
+{FA}Dentro de tus ojos el {REm}momento,  {LAm}Que {LA}me obligue a renacer |
+{FA}Dame {REm}vida y dame aliento, {LAm}Que {LA}yo ya perdí el conocimiento |
+{LA#}Solo {REm}quédate un momento, {LAm}Hasta {LA}evaporarnos en el viento ||
+
+CORO|
+{LA#}No hay {DO}motivos, {FA}Para decirnos {LA}adiós tan pronto |
+{LA#}Sigo {DO}vivo, {FA}Créemelo, {LA}mi amor no soy tan tonto |
+{LA#}Si tú {DO}quisieras esta {FA}noche, Ir a {LA}bailar un chachachá | 
+{LA}Yo {DO}te puedo enamorar||
+
+Dame de tu vida y de tu {REm}tiempo, {LAm}Suficientes {LA}para ver |
+{FA}Dentro de tus ojos el {REm}momento,  {LAm}Que {LA}me obligue a renacer |
+{FA}Dame {REm}vida y dame aliento, {LAm}Que {LA}yo ya perdí el conocimiento |
+{LA#}Solo {REm}quédate un momento, {LAm}Hasta {LA}evaporarnos en el viento ||
+
+"""
