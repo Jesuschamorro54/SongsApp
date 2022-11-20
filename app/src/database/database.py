@@ -1,8 +1,10 @@
 import pymongo
 import urllib
 
+
 from . import enviormentdb as environ
-from .config import CustomLogger, encode
+from .config import CustomLogger, encode, fields as ModelFields
+
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 
@@ -41,13 +43,22 @@ class Database:
         return connection
 
 
-def search(table, params=None):
+def search(table, params={}, fields = []):
 
     result = []
+    query_fields = {}
+
+    # Filter fields
+    for field in fields:
+        if field in ModelFields[table]:
+            query_fields.update({field: 1})
+
     table = connection[table]
 
+    # print("searching params: ", params)
+
     if table != None:
-        result  = list(table.find())
+        result  = list(table.find(params, query_fields))
 
     return encode(result)
 
