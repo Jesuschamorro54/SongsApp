@@ -1,40 +1,49 @@
 import json
-from flask import abort, render_template, jsonify
+import re
+from flask import abort, render_template, jsonify, request
 from flask import Blueprint
 
-from .database.database import search
+from  .controllers.get_authors import get_authors
+from .controllers.get_songs import get_songs
 
 api = Blueprint('api', __name__)
 
 root_path = "/api"
 
+@api.route(f"{root_path}/search")
+def search():
+
+    result = get_authors(request, True)
+    
+    if not result['status']:
+        result = get_songs(request)
+
+    return result
 
 
 @api.route(f"{root_path}/songs", methods=['GET'])
 def all_songs():
 
-    songs = []
-    result = {'data': [], 'status': False}
+    """
+        This function or route returns all the songs in the database
+            
+            The fields that are required to be consulted must be sent by 
+            query parameters separated by commas and with the fields attribute
 
-    songs = search('songs')
+                -> ?fields=field1,field2,field3
 
-    if songs:
-        result.update({
-            'data': songs,
-            'status': True,
-            'count': len(songs)
-        })
+            If you want to filter the search you can do it through the 
+            field you want to filter and its value
 
-    else:
-        result.update({
-            'error': 'NoFoundException',
-            'errorMessage': 'The songs could be found'
-        })
+                -> ?name='example' or &name='example'
+    """
+    result = get_songs(request)
 
     return result
 
 
 @api.route(f"{root_path}/songs/<song_id>")
 def unique_song(song_id):
-    songs = []
-    songs = search('songs')
+    pass
+
+
