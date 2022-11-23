@@ -8,9 +8,9 @@ import "../styles/Nav.css";
 
 function Nav() {
   return (
-    <Navbar bg="light" variant="light">
-      <Container>
-        <Navbar.Brand >
+    <Navbar className="Nav" bg="light" expand="lg">
+      <Container fluid>
+        <Navbar.Brand>
           <Link className="link-logo" to="/">
             <img
               alt=""
@@ -22,23 +22,26 @@ function Nav() {
             SongsApp
           </Link>
         </Navbar.Brand>
-        <Navegation className="me-auto">
-          <Navegation.Link>
-            <Link className="nav-link" to="/">
-              Inicio
-            </Link>
-          </Navegation.Link>
-          <Navegation.Link>
-            <Link className="nav-link" to="songs">
-              Canciones
-            </Link>
-          </Navegation.Link>
-          <Navegation.Link>
-            <Link className="nav-link" to="autors">
-              Autores
-            </Link>
-          </Navegation.Link>
-        </Navegation>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Navegation className="me-auto">
+            <Navegation.Link>
+              <Link className="nav-link" to="/">
+                Inicio
+              </Link>
+            </Navegation.Link>
+            <Navegation.Link>
+              <Link className="nav-link" to="songs">
+                Canciones
+              </Link>
+            </Navegation.Link>
+            <Navegation.Link>
+              <Link className="nav-link" to="autors">
+                Autores
+              </Link>
+            </Navegation.Link>
+          </Navegation>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );

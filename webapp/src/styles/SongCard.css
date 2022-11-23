@@ -1,0 +1,29 @@
+.SongCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(248, 249, 250, 5);
+  padding: 40px;
+}
+
+.myCard{
+    display: flex;
+    flex-direction: row;
+    width: 18rem;
+    margin-bottom: 40px;
+}
+
+.myCard .imgCard{
+    width: 50%;
+}
+
+.myCard .infoCard{
+    width: 50%;
+}
+
+@media(min-width: 1024px){
+    .myCard{
+        width: 38rem;
+    }
+}
