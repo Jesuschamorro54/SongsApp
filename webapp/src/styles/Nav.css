@@ -1,0 +1,15 @@
+.container-logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #529FB8;
+    font-weight: 500;
+}
+
+.container-logo:hover{
+    color: #068BB7;
+}
+
+.container-logo img{
+    margin-right: 5px;
+}
