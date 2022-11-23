@@ -1,0 +1,13 @@
+.Autors{
+    min-height: 100vh;
+}
+
+.Autors h2{
+    margin-bottom: 40px;
+}
+
+.Autors img{
+    width: 160px;
+    height: 160px;
+    border-radius: 25%;
+}
