@@ -12,10 +12,17 @@
     flex-direction: row;
     width: 18rem;
     margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.myCard:hover{
+    opacity: 0.4;
 }
 
 .myCard .imgCard{
     width: 50%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0.375rem;
 }
 
 .myCard .infoCard{

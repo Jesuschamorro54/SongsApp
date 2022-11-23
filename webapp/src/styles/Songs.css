@@ -15,3 +15,22 @@
     text-align: center;
     padding: 12px;
 }
+
+.SongsSearch{
+    margin-bottom: 40px;
+}
+
+.btn-search{
+    border-style: none;
+    background-color: transparent;
+    border-radius: 12px;
+    color: #529FB8;
+    border: 1px solid #529FB8;
+    padding: 12px;
+}
+
+.btn-search:hover{
+    background-color: #529FB8;
+    color: #fff;
+    border: 1px solid #529FB8;
+}
