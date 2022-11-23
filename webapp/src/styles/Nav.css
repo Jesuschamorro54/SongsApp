@@ -1,4 +1,4 @@
-.container-logo{
+.link-logo{
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -6,10 +6,10 @@
     font-weight: 500;
 }
 
-.container-logo:hover{
+.link-logo:hover{
     color: #068BB7;
 }
 
-.container-logo img{
+.link-logo img{
     margin-right: 5px;
 }
