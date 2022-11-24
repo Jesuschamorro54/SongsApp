@@ -11,6 +11,7 @@ import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Songs from "./components/Songs";
 import Autors from "./components/Autors";
+import Letter from "./components/Letter";
 import "./App.css";
 
 const Root = () => {
@@ -25,10 +26,11 @@ const Root = () => {
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Root />}>
-      <Route path="/" element={<Home />}></Route>
-      <Route path="songs" element={<Songs />}></Route>
-      <Route path="autors" element={<Autors />}></Route>
+    <Route exact path="/" element={<Root />}>
+      <Route exact path="/" element={<Home />}></Route>
+      <Route exact path="songs" element={<Songs />}></Route>
+      <Route exact path="autors" element={<Autors />}></Route>
+      <Route exact path="song/:id" element={<Letter />}></Route>
     </Route>
   )
 );
