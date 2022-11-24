@@ -1,13 +1,46 @@
 .Autors{
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 152px);
+    padding: 20px;
 }
 
 .Autors h2{
-    margin-bottom: 40px;
+    color: rgba(0, 0, 0, 0.55);
+    padding: 40px;
 }
 
 .Autors img{
-    width: 160px;
-    height: 160px;
+    object-fit: cover;
+    width: 120px;
+    height: 120px;
     border-radius: 25%;
+    margin-right: 16px;
+}
+
+.Autors .container-list{
+    display: flex;
+    align-items: center;
+}
+
+.Autors .container-list:hover{
+    opacity: 0.4;
+}
+
+
+.Autors .filter{
+    margin-bottom: 80px;
+}
+
+.Autors .autorslist{
+    padding: 20px;
+}
+
+
+
+@media(min-width: 1024px){
+    .Autors .list-group{
+        width: 980px;
+    }
 }

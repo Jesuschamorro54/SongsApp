@@ -3,17 +3,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: calc(100vh - 152px);
     margin-bottom: 40px;
 }
 
 /*rgba(248,249,250, 1)*/
 
 .Songs h2{
-    margin-bottom: 40px;
     color: rgba(0, 0, 0, 0.55);
     text-align: center;
-    padding: 12px;
+    padding: 40px;
 }
 
 .SongsSearch{
