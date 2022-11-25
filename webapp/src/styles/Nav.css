@@ -1,0 +1,16 @@
+.link-logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #529FB8;
+    font-weight: 500;
+}
+
+.link-logo:hover{
+    color: #068BB7;
+}
+
+.link-logo img{
+    margin-right: 5px;
+}
+

@@ -1,0 +1,19 @@
+.Letter{
+    min-height: calc(100vh - 152px);
+}
+
+.Letter .containerTab{
+    padding: 40px;
+    text-align: justify;
+}
+
+.Letter li{
+    color: #529FB8; 
+}
+
+
+@media(min-width:1024px){
+    .Letter{
+        padding: 40px;
+    }
+}

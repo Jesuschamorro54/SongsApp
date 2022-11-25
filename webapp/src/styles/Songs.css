@@ -1,0 +1,35 @@
+.Songs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 152px);
+    margin-bottom: 40px;
+}
+
+/*rgba(248,249,250, 1)*/
+
+.Songs h2{
+    color: rgba(0, 0, 0, 0.55);
+    text-align: center;
+    padding: 40px;
+}
+
+.SongsSearch{
+    margin-bottom: 40px;
+}
+
+.btn-search{
+    border-style: none;
+    background-color: transparent;
+    border-radius: 12px;
+    color: #529FB8;
+    border: 1px solid #529FB8;
+    padding: 12px;
+}
+
+.btn-search:hover{
+    background-color: #529FB8;
+    color: #fff;
+    border: 1px solid #529FB8;
+}
