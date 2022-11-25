@@ -71,7 +71,7 @@ def get_authors(request, is_search=False):
     else:
         result.update({
             'error': 'NoFoundException',
-            'errorMessage': 'The songs could be found'
+            'errorMessage': 'The authors could be found'
         })
     
     return result

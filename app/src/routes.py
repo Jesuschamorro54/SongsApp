@@ -42,6 +42,28 @@ def all_songs():
     return result
 
 
+@api.route(f"{root_path}/authors", methods=['GET'])
+def all_authors():
+
+    """
+        This function or route returns all the auhors in the database
+            
+            The fields that are required to be consulted must be sent by 
+            query parameters separated by commas and with the fields attribute
+
+                -> ?fields=field1,field2,field3
+
+            If you want to filter the search you can do it through the 
+            field you want to filter and its value
+
+                -> ?name='example' or &name='example'
+    """
+    result = get_authors(request)
+
+    return result
+
+
+
 @api.route(f"{root_path}/songs/<song_id>")
 def unique_song(song_id):
     pass

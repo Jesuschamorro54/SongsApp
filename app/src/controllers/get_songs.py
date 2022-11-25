@@ -29,7 +29,7 @@ def get_songs(request):
     if queryStringParameters:
 
         if 'fields' in queryStringParameters:
-            fields = queryStringParameters.pop('fields').split(",")
+            fields = queryStringParameters.pop('fields').split("-")
         
 
         for key, value in queryStringParameters.items():
@@ -45,7 +45,7 @@ def get_songs(request):
     if id_param_name in params:
         params['_id'] = ObjectId(params.pop(id_param_name))
 
-    print(execution_message.format(set(params.keys() if params else {})))
+    print(execution_message.format(set(params.keys()) if params else {}))
 
     songs = []
     songs = search('songs', params, fields)
