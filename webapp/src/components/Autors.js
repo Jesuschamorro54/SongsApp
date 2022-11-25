@@ -14,10 +14,8 @@ function Autors() {
             Filtrar por
           </Dropdown.Toggle>
           <Dropdown.Menu>
-            <Dropdown.Item href="#/action-1">Orden alfabético</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">
-              Mayor número de canciones agregadas
-            </Dropdown.Item>
+            <Dropdown.Item>Orden alfabético</Dropdown.Item>
+            <Dropdown.Item>Mayor número de canciones agregadas</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
       </div>
@@ -25,7 +23,7 @@ function Autors() {
         <ListGroup>
           {data &&
             data.map((autor) => (
-              <ListGroup.Item>
+              <ListGroup.Item key={autor.name}>
                 <div className="container-list">
                   <img src={autor.image}></img>
                   <div className="description">

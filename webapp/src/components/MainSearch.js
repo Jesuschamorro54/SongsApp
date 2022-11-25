@@ -6,8 +6,8 @@ import "../styles/MainSearch.css";
 function MainSearch() {
   return (
     <div className="MainSearch">
-      <div class="container-search">
-        <h2 class="title">SongsApp</h2>
+      <div className="container-search">
+        <h2 className="title">SongsApp</h2>
         <h3>Busca la Canción de la cual deseas la letra.</h3>
         <Form className="d-flex">
           <Form.Control
