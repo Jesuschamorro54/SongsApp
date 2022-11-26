@@ -39,6 +39,5 @@ function App() {
   return <RouterProvider router={router}></RouterProvider>;
 }
 
-//pendiente api
 
 export default App;
