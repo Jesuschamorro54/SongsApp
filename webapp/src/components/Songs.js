@@ -1,21 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import SongCard from "./SongCard";
-import songs from "../assets/data";
+//import fakeSongs from "../assets/data";
 import "../styles/Songs.css";
 
 function Songs() {
+  const [songs, setSongs] = useState([]);
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/api/songs", {
-      method: "GET",
-      mode: "cors",
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-      },
-    })
+    fetch("http://127.0.0.1:5000/api/songs")
       .then((response) => response.json())
-      .then((json) => console.log(json))
+      .then((json) => setSongs(json.data))
       .catch((err) => console.log(err));
   }, []);
 

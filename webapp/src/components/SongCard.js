@@ -8,12 +8,12 @@ function SongCard({ data }) {
     <div className="SongCard">
       {data &&
         data.map((song) => (
-          <Card key={song.name} className="myCard">
-            <Link to={`/song/${song.name}`}>
-              <Card.Img className="imgCard" variant="top" src={song.url} />
+          <Card key={song._id} className="myCard">
+            <Link to={`/songs/${song._id}`}>
+              <Card.Img className="imgCard" variant="top" src={song.image} />
               <Card.Body className="infoCard">
                 <Card.Title>{song.name}</Card.Title>
-                <Card.Text>{song.autor}</Card.Text>
+                <Card.Text>{song.author}</Card.Text>
               </Card.Body>
             </Link>
           </Card>

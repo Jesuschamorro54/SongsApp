@@ -30,7 +30,7 @@ const router = createBrowserRouter(
       <Route exact path="/" element={<Home />}></Route>
       <Route exact path="songs" element={<Songs />}></Route>
       <Route exact path="autors" element={<Autors />}></Route>
-      <Route exact path="song/:id" element={<Letter />}></Route>
+      <Route exact path="songs/:id" element={<Letter />}></Route>
     </Route>
   )
 );

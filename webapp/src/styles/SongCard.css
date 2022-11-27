@@ -19,6 +19,7 @@
     display: flex;
     text-decoration: none;
     color: #000;
+    flex: 1;
 }
 
 .myCard:hover{
@@ -26,13 +27,9 @@
 }
 
 .myCard .imgCard{
-    width: 50%;
+    width: 124px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0.375rem;
-}
-
-.myCard .infoCard{
-    width: 50%;
 }
 
 @media(min-width: 1024px){
