@@ -10,9 +10,9 @@ function Letter() {
   const {id} = useParams();
   console.log(id);
   useEffect(() => {
-    fetch(`http://127.0.0.1:5000/api/songs/${id}`)
+    fetch(`http://127.0.0.1:5000/api/songs?song_id=${id}`)
       .then((response) => response.json())
-      .then((json) => setSong(json.data))
+      .then((json) => setSong(json.data[0]))
       .catch((err) => console.log(err));
   }, [id]);
   return (
@@ -24,7 +24,8 @@ function Letter() {
         className="mb-3"
       >
         <Tab eventKey="artist" title={`${song?.author} - ${song?.name}`} disabled></Tab>
-        <Tab eventKey="letter" className="containerTab" title="Letra">{song?.lyric}</Tab>
+        <Tab eventKey="letter" className="containerTab" title="Letra">
+        <div dangerouslySetInnerHTML={{__html: song?.lyric}}></div></Tab>
         <Tab eventKey="chord" className="containerTab" title="Acordes">{song?.lyric_with_chord}</Tab>
       </Tabs>
     </div>
