@@ -10,7 +10,7 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Songs from "./components/Songs";
-import Autors from "./components/Autors";
+import Authors from "./components/Authors";
 import Letter from "./components/Letter";
 import "./App.css";
 
@@ -29,7 +29,7 @@ const router = createBrowserRouter(
     <Route exact path="/" element={<Root />}>
       <Route exact path="/" element={<Home />}></Route>
       <Route exact path="songs" element={<Songs />}></Route>
-      <Route exact path="autors" element={<Autors />}></Route>
+      <Route exact path="authors" element={<Authors />}></Route>
       <Route exact path="songs/:id" element={<Letter />}></Route>
     </Route>
   )

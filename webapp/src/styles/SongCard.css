@@ -27,9 +27,13 @@
 }
 
 .myCard .imgCard{
-    width: 124px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0.375rem;
+}
+
+.imgCard{
+    width: 124px;
+    object-fit: cover;
 }
 
 @media(min-width: 1024px){

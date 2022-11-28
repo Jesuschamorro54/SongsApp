@@ -1,4 +1,4 @@
-.Autors{
+.Authors{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,12 +6,12 @@
     padding: 20px;
 }
 
-.Autors h2{
+.Authors h2{
     color: rgba(0, 0, 0, 0.55);
     padding: 40px;
 }
 
-.Autors img{
+.Authors img{
     object-fit: cover;
     width: 120px;
     height: 120px;
@@ -19,28 +19,23 @@
     margin-right: 16px;
 }
 
-.Autors .container-list{
+.Authors .container-list{
     display: flex;
     align-items: center;
 }
 
-.Autors .container-list:hover{
+.Authors .container-list:hover{
     opacity: 0.4;
 }
 
-
-.Autors .filter{
-    margin-bottom: 80px;
-}
-
-.Autors .autorslist{
+.Authors .authorslist{
     padding: 20px;
 }
 
 
 
 @media(min-width: 1024px){
-    .Autors .list-group{
+    .Authors .list-group{
         width: 980px;
     }
 }

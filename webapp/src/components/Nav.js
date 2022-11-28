@@ -25,21 +25,15 @@ function Nav() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Navegation className="me-auto">
-            <Navegation.Link>
-              <Link className="nav-link" to="/">
-                Inicio
-              </Link>
-            </Navegation.Link>
-            <Navegation.Link>
-              <Link className="nav-link" to="songs">
-                Canciones
-              </Link>
-            </Navegation.Link>
-            <Navegation.Link>
-              <Link className="nav-link" to="autors">
-                Autores
-              </Link>
-            </Navegation.Link>
+            <Link className="nav-link" to="/">
+              Inicio
+            </Link>
+            <Link className="nav-link" to="songs">
+              Canciones
+            </Link>
+            <Link className="nav-link" to="authors">
+              Autores
+            </Link>
           </Navegation>
         </Navbar.Collapse>
       </Container>
