@@ -48,7 +48,7 @@ function Authors() {
           <ListGroup>
             {authors &&
               authors.map((author) => (
-                <Link to={`/authors/${author._id}`}>
+                <Link to={`/authors/${author.name}`}>
                   <ListGroup.Item key={author._id}>
                     <div className="container-list">
                       <img src={author.image}></img>

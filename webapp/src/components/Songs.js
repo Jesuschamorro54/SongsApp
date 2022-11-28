@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import SongCard from "./SongCard";
@@ -9,12 +10,17 @@ function Songs() {
   const [search, setSearch] = useState();
   const [songsByName, setSongsByName] = useState(null);
   const [songs, setSongs] = useState([]);
+  const { name } = useParams();
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/api/songs")
+    let url = "http://127.0.0.1:5000/api/songs";
+    if (name) {
+      url = `http://127.0.0.1:5000/api/search?author=${name}`;
+    }
+    fetch(url)
       .then((response) => response.json())
       .then((json) => setSongs(json.data))
       .catch((err) => console.log(err));
-  }, []);
+  }, [name]);
 
   return (
     <div className="Songs">

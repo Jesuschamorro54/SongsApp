@@ -31,6 +31,7 @@ const router = createBrowserRouter(
       <Route exact path="songs" element={<Songs />}></Route>
       <Route exact path="authors" element={<Authors />}></Route>
       <Route exact path="songs/:id" element={<Letter />}></Route>
+      <Route exact path="authors/:name" element={<Songs />}></Route>
     </Route>
   )
 );
